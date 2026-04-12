@@ -52,15 +52,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Plutoeat&show_icons=true&theme=tokyonight"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Plutoeat&layout=compact&theme=tokyonight"/>
-</p>
-
----
-
 ## 🎯 Current Focus
 
 - 📈 构建量化交易系统
