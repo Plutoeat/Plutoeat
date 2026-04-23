@@ -56,7 +56,7 @@
 
 ### 结构化图形生成：Mermaid语法
 
-![Screenshot 2026-04-20 at 11.23.32](/Users/paidaxing/Documents/code/githubProjects/Plutoeat/CAIE/Level1/assets/mermaid常见图表.png)
+![Screenshot 2026-04-20 at 11.23.32](assets/mermaid常见图表.png)
 
 ## 文生图(Text-to-Image)提示词设计方法
 
@@ -167,7 +167,7 @@
 
 视频生成与静态图像生成的本质差异在于：视频有**时间维度**，需要描述"在时间序列上发生了什么"
 
-![Screenshot 2026-04-20 at 12.07.02](/Users/paidaxing/Documents/code/githubProjects/Plutoeat/CAIE/Level1/assets/视频prompt核心元素.png)
+![Screenshot 2026-04-20 at 12.07.02](assets/视频prompt核心元素.png)
 
 **优先级原则**：在提示词字数有限时，**"主体动作描述"和"运镜语言"**的优先级最高，因为这两类信息是视频模型最核心的内容控制维度。"通用画质词"（如"8K分辨率、虚幻引擎5渲染、大师级作品"）的优先级最低——当代主流视频大模型（如可灵、即梦）经过高质量数据微调，默认输出即为高清质量，过多堆砌质量词只会稀释核心语义权重，且被模型视为语义噪音
 
@@ -220,13 +220,13 @@
 
 **深度思考（Deep Thinking / Reasoning）**：指以DeepSeek-R1、OpenAI o1/o3为代表的推理模型所具备的内置"慢思考"能力。这类模型通过强化学习（RL）训练，学会了在回答前自发进行大量内部推理（模型内部会生成大量"思维草稿"，最终只向用户展示精炼后的答案）
 
-![Screenshot 2026-04-20 at 15.30.34](/Users/paidaxing/Documents/code/githubProjects/Plutoeat/CAIE/Level1/assets/CoTvsReasoning.png)
+![Screenshot 2026-04-20 at 15.30.34](assets/CoTvsReasoning.png)
 
 **关键区别**：CoT是一种**提示技术**，需要用户在Prompt中主动触发；深度思考是推理模型通过特殊训练获得的**内置能力**，使用时不需要在Prompt中加入特殊指令（反而不建议写"请一步一步思考"，因为推理模型已经会自动这样做）
 
 ### 深度思考模型(R1/o1类)与普通模型的选择策略
 
-![Screenshot 2026-04-20 at 15.32.46](/Users/paidaxing/Documents/code/githubProjects/Plutoeat/CAIE/Level1/assets/ReasoningStra.png)
+![Screenshot 2026-04-20 at 15.32.46](assets/ReasoningStra.png)
 
 **推理模型不应使用的场景**（重要）：在RAG系统末端做简单文档汇总、翻译、格式转换等不需要复杂推理的任务时，不应使用推理模型——这会显著增加响应延迟和Token消耗，并可能因模型"想太多"而对简单内容进行过度分析，反而产生幻觉或答非所问
 

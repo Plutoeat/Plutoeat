@@ -17,7 +17,7 @@
 
 ### RAG的架构与工作流
 
-![Screenshot 2026-04-22 at 13.07.46](/Users/paidaxing/Documents/code/githubProjects/Plutoeat/CAIE/Level1/assets/RAG-workflow.png)
+![Screenshot 2026-04-22 at 13.07.46](assets/RAG-workflow.png)
 
 **关键组件详解**：
 
